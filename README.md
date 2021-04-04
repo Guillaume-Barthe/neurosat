@@ -24,6 +24,8 @@ The `scripts/` directory includes a few scripts to get started.
 
 These scripts can be easily modified to train and test on larger datasets.
 
+If you want to try your own problems, go to python/gen_sr_dimacs.py and at the end of the file you will see my comments to show how to run some examples of problems during testing.
+
 ## Resources
 
 More information about NeuroSAT can be found in the paper <https://arxiv.org/abs/1802.03685>.
