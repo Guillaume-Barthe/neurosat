@@ -87,6 +87,10 @@ if __name__ == "__main__":
 
         iclauses.append(iclause_unsat)
         write_dimacs_to(n_vars, iclauses, out_filenames[0])
+        #Here you can add the problems you want to ask the trained NeuroSAT
+        #For example i tried the following examples
+        #write_dimacs_to(2, [(1,2),(-1,2),(-2,1)],out_filenames[0]) which should return [True,True] as a SAT assignment
+        #write_dimacs_to(5, [(1,2),(2,-3),(3,4),(4,-5),(5,1),(-5,-2),(-3,4)],out_filenames[0]) which should return [True,True,True,True,False] as a SAT assignment
 
         iclauses[-1] = iclause_sat
         write_dimacs_to(n_vars, iclauses, out_filenames[1])
